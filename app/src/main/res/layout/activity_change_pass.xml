@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChangePassActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <!--app:layout_collapseMode="pin"-->
+        <!--app:layout_scrollFlags="scroll|enterAlways"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- This is a centered logo -->
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="?attr/actionBarSize"
+                android:layout_marginTop="4dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_back"
+                />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:text="Change password"
+                android:textSize="@dimen/text_size_18"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/toolbar_done"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:text="Done"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_below="@+id/toolbar">
+
+
+        <EditText
+            android:id="@+id/et_cur_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="current password"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/et_new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="new password"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/et_new_pass_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="new password again"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_changepass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="Change password"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+    <com.tt.whorlviewlibrary.WhorlView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/whorl2"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        app:whorlview_circle_colors="#d50000_#ffffff_#bc0000_#33A0E8_#d50000"
+        app:whorlview_circle_speed="270"
+        app:whorlview_parallax="fast"
+        app:whorlview_strokeWidth="6"
+        android:visibility="gone"
+        app:whorlview_sweepAngle="90"/>
+</RelativeLayout>

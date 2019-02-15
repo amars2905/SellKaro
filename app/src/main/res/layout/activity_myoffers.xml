@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MyoffersActivity"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_offers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#edf0f7"
+            android:layout_above="@+id/bottom_bar"
+            android:padding="10dp" />
+
+        <include
+            android:id="@+id/bottom_bar"
+            layout="@layout/layout_bottom_bar" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-24dp"
+            android:elevation="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_add_gray_36"
+            app:backgroundTint="@color/shadow2"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            tools:ignore="RelativeOverlap" />
+
+        <com.tt.whorlviewlibrary.WhorlView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/whorl2"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            app:whorlview_circle_colors="#644ab1_#ffffff_#362668_#00b7b7_#644ab1"
+            app:whorlview_circle_speed="270"
+            app:whorlview_parallax="fast"
+            app:whorlview_strokeWidth="6"
+            android:visibility="gone"
+            app:whorlview_sweepAngle="90"/>
+
+        <TextView
+            android:id="@+id/txtnoffers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/noffers"
+            android:visibility="gone"
+            android:textColor="@color/colorGray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProductDetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                >
+                <!--
+
+                                <ImageView
+                                    android:id="@+id/imgImage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/single_products" />
+                -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        tools:ignore="RtlCompat" />
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_bg_trance_black"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                <com.sell.karo.views.CustomTextViewSbold
+                    android:id="@+id/txtPhotoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circuler_bg_trance_black"
+                    android:drawableLeft="@drawable/ic_collections_white"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:text=""
+                    android:textColor="@color/colorWhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <com.sell.karo.views.CustomTextViewbold
+                    android:id="@+id/txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btnEdit"
+                    android:text="Desktop For Home"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <com.sell.karo.views.CustomTextViewSbold
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="7dp"
+                    android:text="Edit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_15"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.github.curioustechizen.ago.RelativeTimeTextView
+                    android:id="@+id/txtTiming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:text="3h ago by"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <com.sell.karo.views.CustomTextViewMregular
+                    android:id="@+id/txtUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtTiming"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txtTiming"
+                    android:drawablePadding="10dp"
+                    android:text=" abc212"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <com.sell.karo.views.CustomTextViewMregular
+                    android:id="@+id/single_product2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTiming"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_loyalty_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:text="@string/rupeeSymbolWithValue"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <com.sell.karo.views.CustomTextViewMregular
+                    android:id="@+id/single_product4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/single_product2"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_favorite_border_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:text="4 Likes"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+
+                <com.sell.karo.views.CustomTextViewMregular
+                    android:id="@+id/single_product3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/single_product4"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_cube"
+                    android:drawablePadding="10dp"
+                    android:text="Used"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+
+                <com.sell.karo.views.CustomTextViewMregular
+                    android:id="@+id/txtCa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/single_product3"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_layout"
+                    android:drawablePadding="10dp"
+                    android:text="In "
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <com.sell.karo.views.CustomTextViewMregular
+                    android:id="@+id/single_product5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/single_product3"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txtCa"
+                    android:drawablePadding="10dp"
+                    android:text="iphone 7 series"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+
+                <com.sell.karo.views.CustomTextViewMregular
+                    android:id="@+id/description2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/single_product5"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_format_align_left_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Iphone 7 32 gb Black"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!--
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="14dp"
+                        android:orientation="horizontal">
+
+                        <com.sallkaro.views.CustomTextViewMregular
+                            android:id="@+id/like"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/border_left_rounded_blue"
+                            android:drawableLeft="@drawable/ic_favorite_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="4" />
+
+                        <LinearLayout
+                            android:id="@+id/chat"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#bdc0c3" />
+
+                            <com.sallkaro.views.CustomTextViewMregular
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#e8ecf0"
+                                android:gravity="center"
+                                android:text="Chat"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnMakeOffer"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/border_right_rounded"
+                            android:gravity="center_vertical"
+                            android:text="Make Offer"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_14" />
+
+                    </LinearLayout>
+
+            -->
+
+            <com.sell.karo.views.CustomTextViewMregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#edf0f7"
+                android:paddingBottom="7dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="PRODUCT LOCATION"
+                android:textColor="#4b4d52"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.sell.karo.views.CustomTextViewMregular
+                android:id="@+id/txtMeetUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/single_product2"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_group"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="Meet-up"
+                android:textColor="#555555"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+            <com.sell.karo.views.CustomTextViewMregular
+                android:id="@+id/txtPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/single_product2"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_place"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="Singapore"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+               <!-- <fragment
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"/>-->
+            </FrameLayout>
+
+            <com.sell.karo.views.CustomTextViewMregular
+                android:id="@+id/txtMallingAndDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/single_product2"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_directions_bus"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="Meetup, Mailling and Delivery"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <com.sell.karo.views.CustomTextViewMregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#edf0f7"
+                android:paddingBottom="7dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="SHARE THIS LISTING"
+                android:textColor="#4b4d52"
+                android:textSize="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_fb" />
+
+                <ImageView
+                    android:id="@+id/iv_whatsapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_whatsapp" />
+
+                <ImageView
+                    android:id="@+id/iv_twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_tweeter" />
+
+            </LinearLayout>
+
+            <com.sell.karo.views.CustomTextViewMregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#edf0f7"
+                android:paddingBottom="7dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="MEET THIS SELLER"
+                android:textColor="#4b4d52"
+                android:textSize="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageUser"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/user_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.sallkaro.views.CustomTextViewMregular
+                        android:id="@+id/sellerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="revant321"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <com.sell.karo.views.CustomTextViewMregular
+                        android:id="@+id/txt_seller_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="1 month ago"
+                        android:textSize="14dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.sell.karo.views.CustomTextViewMregular
+                            android:id="@+id/verified"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Verified"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/text_size_14"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:id="@+id/imgEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_email_gray" />
+
+                        <ImageView
+                            android:id="@+id/imgPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_phone" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.sallkaro.views.CustomTextViewMregular
+                            android:id="@+id/txtRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="2dp"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/btn2color"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <com.whinc.widget.ratingbar.RatingBar
+                            android:id="@+id/ratingBar"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            app:rb_click_rating="true"
+                            app:rb_count="3"
+                            app:rb_empty="@drawable/empty"
+                            app:rb_fill="@drawable/fill"
+                            app:rb_max_count="5"
+                            app:rb_space="0dp"
+                            app:rb_touch_rating="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="-5dp"
+                            android:src="@drawable/ic_chevron_right_dark_gray" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.sallkaro.views.CustomTextViewMregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#edf0f7"
+                android:paddingBottom="7dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="PUBLIC COMMENT"
+                android:textColor="#4b4d52"
+                android:textSize="@dimen/text_size_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.sallkaro.views.CustomTextViewMregular
+                    android:id="@+id/after_public_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Be the first to write a public comment. Ask a question
+                        or @ mention a friend to check this out! "
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+
+            <RelativeLayout
+                android:id="@+id/commentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="7dp">
+
+                <com.sallkaro.views.CustomTextViewSbold
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Post a new comment"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_16" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/like"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/border_left_rounded_blue"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/likeicon"
+                android:layout_margin="3dp"
+                android:src="@drawable/ic_grey_heart_outline"/>
+
+            <com.sell.karo.views.CustomTextViewbold
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="4"
+                android:layout_marginLeft="2dp"
+                android:textSize="@dimen/text_size_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#bdc0c3" />
+
+            <com.sell.karo.views.CustomTextViewbold
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e8ecf0"
+                android:gravity="center"
+                android:text="Chat"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMakeOffer"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.2"
+            android:background="@drawable/border_right_rounded"
+            android:gravity="center_vertical"
+            android:text="Make Offer"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <com.tt.whorlviewlibrary.WhorlView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/whorl2"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        app:whorlview_circle_colors="#644ab1_#ffffff_#362668_#00b7b7_#644ab1"
+        app:whorlview_circle_speed="270"
+        app:whorlview_parallax="fast"
+        app:whorlview_strokeWidth="6"
+        android:visibility="gone"
+        app:whorlview_sweepAngle="90"/>
+</RelativeLayout>

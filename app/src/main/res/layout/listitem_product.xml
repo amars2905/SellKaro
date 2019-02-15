@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainlayout"
+        android:layout_margin="2dp"
+       >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toplayout"
+            android:layout_margin="5dp"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/user_icon" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <com.sell.karo.views.CustomTextViewSbold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:id="@+id/username"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/colorTextSBold"
+                    android:layout_gravity="center_vertical"
+                    android:text="username"/>
+
+                <com.github.curioustechizen.ago.RelativeTimeTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:id="@+id/posteddate"
+                    android:textColor="@color/colorTextRegular"
+                    android:text="5 min ago"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <com.sell.karo.views.SquareImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toplayout"
+            android:src="@drawable/placeholder" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgView"
+            android:layout_margin="5dp"
+            android:id="@+id/itemdetails"
+            >
+
+            <com.sell.karo.views.CustomTextViewSbold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemname"
+                android:textSize="13sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/colorTextSBold"
+                android:text="Iphone 7"/>
+
+            <com.sell.karo.views.CustomTextViewMregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/colorTextSBold"
+                android:id="@+id/price"
+                android:text="Rs 31000"/>
+
+            <com.sell.karo.views.CustomTextViewMregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/description"
+                android:textColor="@color/colorTextRegular"
+                android:text="Description"/>
+
+            <com.sell.karo.views.CustomTextViewMregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/condition"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/colorTextRegular"
+                android:text="New"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemdetails"
+            android:weightSum="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_weight="0.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:id="@+id/likelayout">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/likeicon"
+                            android:layout_weight="0.4"
+                            android:layout_gravity="center_vertical|right"
+                            android:gravity="center_vertical|right"
+                            android:src="@drawable/likebutton"/>
+
+                        <com.sell.karo.views.CustomTextViewMregular
+                            android:id="@+id/likeCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="590"
+                            android:textColor="@color/colorTextRegular"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:id="@+id/layoutShare">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:src="@drawable/ic_share" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+                <com.sell.karo.views.CustomTextViewMregular
+                    android:id="@+id/viewCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="Views 320"
+                    android:textColor="@color/colorTextRegular"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
