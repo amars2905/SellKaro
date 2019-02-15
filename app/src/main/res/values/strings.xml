@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SellKaro</string>
+
+    <string name="facebook_app_id">362305894603088</string>
+    <string name="fb_login_protocol_scheme">fb362305894603088</string>
+
 </resources>
