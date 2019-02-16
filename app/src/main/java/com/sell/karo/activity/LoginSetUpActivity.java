@@ -1,5 +1,6 @@
 package com.sell.karo.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +20,7 @@ import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.sell.karo.R;
+import com.sell.karo.utils.Alerts;
 
 import java.util.Arrays;
 
@@ -31,12 +33,13 @@ public class LoginSetUpActivity extends AppCompatActivity {
     private AccessTokenTracker accessTokenTracker;
     private CallbackManager callbackManager;
     private LoginButton loginButton;
+    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_set_up);
-
+        mContext=this;
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,6 +101,7 @@ public class LoginSetUpActivity extends AppCompatActivity {
                             Log.e("facebook - profile", currentProfile.getFirstName());
                             String strName = currentProfile.getFirstName();
                             String strUsername = currentProfile.getFirstName();
+                            Alerts.show(mContext,strName);
                             mProfileTracker.stopTracking();
                         }
                     };
@@ -106,6 +110,7 @@ public class LoginSetUpActivity extends AppCompatActivity {
                     Log.e("facebook - profile", profile.getFirstName());
                     String strName = profile.getFirstName();
                     String strUsername = profile.getFirstName();
+                    Alerts.show(mContext,strName);
                 }
             }
 
