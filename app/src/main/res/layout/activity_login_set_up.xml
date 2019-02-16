@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
+    android:fillViewport="true"
     android:gravity="center"
     android:orientation="vertical"
-    android:fillViewport="true"
-    tools:context=".Activity.LoginSetUpActivity">
+    tools:context=".activity.LoginSetUpActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorWhite"
         android:gravity="center"
+        android:orientation="vertical"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
-        android:orientation="vertical"
         android:weightSum="2">
 
         <ImageView
@@ -32,8 +30,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
             android:orientation="vertical">
             <!--0.9-->
 
@@ -69,6 +67,14 @@
             <!--android:layout_marginTop="30dp"-->
             <!--android:visibility="gone"-->
             <!--android:layout_marginBottom="30dp" />-->
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
 
             <Button
                 android:id="@+id/btnFb"

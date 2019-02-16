@@ -1,4 +1,4 @@
-package com.sell.karo.Activity;
+package com.sell.karo.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,11 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import com.sell.karo.R;
 
 
-public class ChangePassActivity extends AppCompatActivity {
+public class SettingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_change_pass);
+        setContentView(R.layout.activity_setting);
     }
 }

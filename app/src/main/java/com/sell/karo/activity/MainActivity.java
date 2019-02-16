@@ -1,4 +1,4 @@
-package com.sell.karo.Activity;
+package com.sell.karo.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -24,11 +24,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.sell.karo.Adapter.CategoryAdapter;
-import com.sell.karo.Adapter.DealsAdapter;
-import com.sell.karo.Adapter.SlidingImage_Adapter;
-import com.sell.karo.Model.CategoriesModel;
-import com.sell.karo.Model.ProductData;
+import com.sell.karo.adapter.CategoryAdapter;
+import com.sell.karo.adapter.DealsAdapter;
+import com.sell.karo.adapter.SlidingImage_Adapter;
+import com.sell.karo.model.CategoriesModel;
+import com.sell.karo.model.ProductData;
 import com.sell.karo.R;
 
 import java.util.ArrayList;

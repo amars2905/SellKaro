@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.MyoffersActivity"
+    tools:context=".activity.MyoffersActivity"
     android:background="@color/colorWhite"
     android:orientation="vertical">
     <include layout="@layout/layout_toolbar" />

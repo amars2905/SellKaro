@@ -1,4 +1,4 @@
-package com.sell.karo.Adapter;
+package com.sell.karo.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,9 +11,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 
-import com.sell.karo.Activity.SearchForCategoryActivity;
-import com.sell.karo.Activity.SearchForSingaporeChina;
-import com.sell.karo.Model.CategoriesModel;
+import com.sell.karo.activity.SearchForCategoryActivity;
+import com.sell.karo.activity.SearchForSingaporeChina;
+import com.sell.karo.model.CategoriesModel;
 import com.sell.karo.R;
 import com.sell.karo.views.CustomTextViewSbold;
 import com.squareup.picasso.Picasso;

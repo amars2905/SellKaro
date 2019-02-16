@@ -1,4 +1,4 @@
-package com.sell.karo.Activity;
+package com.sell.karo.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

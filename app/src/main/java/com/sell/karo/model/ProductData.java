@@ -1,4 +1,4 @@
-package com.sell.karo.Model;
+package com.sell.karo.model;
 
 import java.util.Date;
 

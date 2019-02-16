@@ -1,4 +1,4 @@
-package com.sell.karo.Adapter;
+package com.sell.karo.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,8 +14,8 @@ import android.widget.RelativeLayout;
 
 import com.github.curioustechizen.ago.RelativeTimeTextView;
 
-import com.sell.karo.Activity.ProductDetailActivity;
-import com.sell.karo.Model.ProductData;
+import com.sell.karo.activity.ProductDetailActivity;
+import com.sell.karo.model.ProductData;
 import com.sell.karo.R;
 import com.sell.karo.views.CustomTextViewMregular;
 import com.sell.karo.views.CustomTextViewSbold;

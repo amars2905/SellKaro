@@ -1,4 +1,4 @@
-package com.sell.karo.Adapter;
+package com.sell.karo.adapter;
 
 import android.content.Context;
 import android.os.Parcelable;

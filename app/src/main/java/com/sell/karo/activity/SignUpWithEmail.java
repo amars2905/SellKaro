@@ -1,4 +1,4 @@
-package com.sell.karo.Activity;
+package com.sell.karo.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,11 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import com.sell.karo.R;
 
 
-public class ProductDetailActivity extends AppCompatActivity {
+public class SignUpWithEmail extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_detail);
+        setContentView(R.layout.activity_sign_up_with_email);
     }
 }
