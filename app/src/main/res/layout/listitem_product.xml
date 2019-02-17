@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                <com.sell.karo.views.CustomTextViewSbold
+                <com.sell.sellkaro.views.CustomTextViewSbold
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
@@ -63,7 +63,7 @@
 
 
 
-        <com.sell.karo.views.SquareImageView
+        <com.sell.sellkaro.views.SquareImageView
             android:id="@+id/imgView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -82,7 +82,7 @@
             android:id="@+id/itemdetails"
             >
 
-            <com.sell.karo.views.CustomTextViewSbold
+            <com.sell.sellkaro.views.CustomTextViewSbold
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/itemname"
@@ -92,7 +92,7 @@
                 android:textColor="@color/colorTextSBold"
                 android:text="Iphone 7"/>
 
-            <com.sell.karo.views.CustomTextViewMregular
+            <com.sell.sellkaro.views.CustomTextViewMregular
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
@@ -102,7 +102,7 @@
                 android:id="@+id/price"
                 android:text="Rs 31000"/>
 
-            <com.sell.karo.views.CustomTextViewMregular
+            <com.sell.sellkaro.views.CustomTextViewMregular
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
@@ -112,7 +112,7 @@
                 android:textColor="@color/colorTextRegular"
                 android:text="Description"/>
 
-            <com.sell.karo.views.CustomTextViewMregular
+            <com.sell.sellkaro.views.CustomTextViewMregular
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
@@ -156,7 +156,7 @@
                             android:gravity="center_vertical|right"
                             android:src="@drawable/likebutton"/>
 
-                        <com.sell.karo.views.CustomTextViewMregular
+                        <com.sell.sellkaro.views.CustomTextViewMregular
                             android:id="@+id/likeCount"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
@@ -190,7 +190,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5">
-                <com.sell.karo.views.CustomTextViewMregular
+                <com.sell.sellkaro.views.CustomTextViewMregular
                     android:id="@+id/viewCount"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"

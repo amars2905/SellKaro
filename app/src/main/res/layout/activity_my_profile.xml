@@ -53,7 +53,7 @@
                             android:layout_toRightOf="@+id/image"
                             android:orientation="vertical">
 
-                            <com.sell.karo.views.CustomTextViewSbold
+                            <com.sell.sellkaro.views.CustomTextViewSbold
                                 android:id="@+id/txtName"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                                 android:textSize="@dimen/text_size_18"
                                 android:textStyle="bold" />
 
-                            <com.sell.karo.views.CustomTextViewSbold
+                            <com.sell.sellkaro.views.CustomTextViewSbold
                                 android:id="@+id/txtCity"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
-                                <com.sell.karo.views.CustomTextViewSbold
+                                <com.sell.sellkaro.views.CustomTextViewSbold
                                     android:id="@+id/txtReviews"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
                         android:layout_below="@+id/divider"
                         android:orientation="horizontal">
 
-                        <com.sell.karo.views.CustomTextViewSbold
+                        <com.sell.sellkaro.views.CustomTextViewSbold
                             android:id="@+id/editProfile"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -150,7 +150,7 @@
                             android:background="@drawable/divider_vertical"
                             />
 
-                        <com.sell.karo.views.CustomTextViewSbold
+                        <com.sell.sellkaro.views.CustomTextViewSbold
                             android:id="@+id/editSetting"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -170,7 +170,7 @@
                             android:background="@drawable/divider_vertical"
                             />
 
-                        <com.sell.karo.views.CustomTextViewSbold
+                        <com.sell.sellkaro.views.CustomTextViewSbold
                             android:id="@+id/editOffersMade"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
                         android:layout_marginTop="5dp"
                         android:orientation="vertical">
 
-                        <com.sell.karo.views.CustomTextViewMregular
+                        <com.sell.sellkaro.views.CustomTextViewMregular
                             android:id="@+id/joinedOn"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -219,7 +219,7 @@
                             android:gravity="center"
                             android:orientation="horizontal">
 
-                            <com.sell.karo.views.CustomTextViewMregular
+                            <com.sell.sellkaro.views.CustomTextViewMregular
                                 android:id="@+id/verified"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -262,7 +262,7 @@
 
                         </LinearLayout>
 
-                        <com.sell.karo.views.CustomTextViewMregular
+                        <com.sell.sellkaro.views.CustomTextViewMregular
                             android:id="@+id/txtbio"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -278,7 +278,7 @@
 
 
 
-                        <com.sell.karo.views.CustomTextViewMregular
+                        <com.sell.sellkaro.views.CustomTextViewMregular
                             android:id="@+id/tv_website"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -308,7 +308,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/divider_horizontal" />
 
-                        <com.sell.karo.views.CustomTextViewMregular
+                        <com.sell.sellkaro.views.CustomTextViewMregular
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"

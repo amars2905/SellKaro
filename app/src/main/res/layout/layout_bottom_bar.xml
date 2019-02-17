@@ -45,7 +45,7 @@
 
                 </ImageView>
 
-                <com.sell.karo.views.CustomTextViewSbold
+                <com.sell.sellkaro.views.CustomTextViewSbold
                     android:id="@+id/txtBrowse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
 
             </LinearLayout>
 
-            <com.sell.karo.views.CustomTextViewSbold
+            <com.sell.sellkaro.views.CustomTextViewSbold
                 android:id="@+id/txtSELL"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -84,7 +84,7 @@
 
                 </ImageView>
 
-                <com.sell.karo.views.CustomTextViewSbold
+                <com.sell.sellkaro.views.CustomTextViewSbold
                     android:id="@+id/txtME"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -16,7 +16,7 @@
 
     </ImageView>
 
-    <com.sell.karo.views.CustomTextViewSbold
+    <com.sell.sellkaro.views.CustomTextViewSbold
         android:id="@+id/catName"
         android:layout_width="85dp"
         android:layout_height="wrap_content"

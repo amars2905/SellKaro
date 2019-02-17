@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1076172312725",
+    "firebase_url": "https://sellkaro-e3190.firebaseio.com",
+    "project_id": "sellkaro-e3190",
+    "storage_bucket": "sellkaro-e3190.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076172312725:android:805a1dbaae8fc8e8",
+        "android_client_info": {
+          "package_name": "com.sell.sellkaro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076172312725-u0rr3jenpv6k29pc6o92astbpef6lmh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sell.sellkaro",
+            "certificate_hash": "39420feba53d702105d9f4b7334d3e7702d93780"
+          }
+        },
+        {
+          "client_id": "1076172312725-1n3isni9kokt1d1jflnfobelhvte6fj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMMCEHMItCTeIJif4pVFF0DmHC06P5ySU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076172312725-1n3isni9kokt1d1jflnfobelhvte6fj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

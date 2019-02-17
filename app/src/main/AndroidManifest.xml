@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.sell.karo">
+    package="com.sell.sellkaro">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,47 +16,47 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity
-            android:name=".activity.ProductDetailActivity"
+            android:name="com.sell.sellkaro.activity.ProductDetailActivity"
             android:theme="@style/NoActionBar"
             tools:ignore="InnerclassSeparator" />
         <activity
-            android:name=".activity.SearchForSingaporeChina"
+            android:name="com.sell.sellkaro.activity.SearchForSingaporeChina"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".activity.SearchForCategoryActivity"
+            android:name="com.sell.sellkaro.activity.SearchForCategoryActivity"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".activity.MyLikesActivity"
+            android:name="com.sell.sellkaro.activity.MyLikesActivity"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".activity.ChooseImgActivity"
+            android:name="com.sell.sellkaro.activity.ChooseImgActivity"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".activity.MyoffersActivity"
+            android:name="com.sell.sellkaro.activity.MyoffersActivity"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".activity.SettingActivity"
+            android:name="com.sell.sellkaro.activity.SettingActivity"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".activity.EditProfileActivity"
+            android:name="com.sell.sellkaro.activity.EditProfileActivity"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".activity.ChangePassActivity"
+            android:name="com.sell.sellkaro.activity.ChangePassActivity"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".activity.MyProfileActivity"
+            android:name="com.sell.sellkaro.activity.MyProfileActivity"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".activity.SignUpWithEmail"
+            android:name="com.sell.sellkaro.activity.SignUpWithEmail"
             android:theme="@style/AppTheme.FullScreen" />
         <activity
-            android:name=".activity.LoginSetUpActivity"
+            android:name="com.sell.sellkaro.activity.LoginSetUpActivity"
             android:theme="@style/AppTheme.FullScreen" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.sell.sellkaro.activity.LoginActivity"
             android:theme="@style/AppTheme.FullScreen" />
         <activity
-            android:name=".ui.activity.SplashActivity"
+            android:name="com.sell.sellkaro.ui.activity.SplashActivity"
             android:theme="@style/AppTheme.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -66,7 +66,7 @@
         </activity>
 
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.sell.sellkaro.activity.MainActivity"
             android:theme="@style/NoActionBar" />
 
         <!--Facebook-->
@@ -91,6 +91,12 @@
             </intent-filter>
         </activity>
 
+        <!--Firebase-->
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
     </application>
 
