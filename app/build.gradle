@@ -44,6 +44,8 @@ dependencies {
     implementation 'com.github.curioustechizen.android-ago:library:1.4.0'
 
     implementation 'com.facebook.android:facebook-login:4.40.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+
 
     /*implementation 'com.jaychang:simpleauth:2.1.4'
     implementation 'com.jaychang:simpleauth-facebook:2.1.4'
